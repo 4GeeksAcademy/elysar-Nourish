@@ -5,14 +5,14 @@ const Navbar = () => {
         className="navbar navbar-custom ms-auto"
         style={{ backgroundColor: "#354f52" }}
       >
-        <div className="container-fluid">
+        <div className="container-fluid p-3">
           <a className="navbar-brand" href="#">
-            Nourish
+            nourish.
           </a>
+          <button type="button" className="add-btn rounded-pill ms-auto">
+            Add Meal +
+          </button>
         </div>
-        <button type="button" className="btn btn-success rounded-pill ms-auto">
-          Add Meal +
-        </button>
       </nav>
     </>
   );
