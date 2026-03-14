@@ -7,7 +7,7 @@ const Navbar = () => {
       >
         <div className="container-fluid p-3">
           <a className="navbar-brand" href="#">
-            nourish.
+            nourish. Meal Tracker
           </a>
           <button type="button" className="add-btn rounded-pill ms-auto">
             Add Meal +
