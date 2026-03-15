@@ -9,7 +9,12 @@ const Navbar = () => {
           <a className="navbar-brand" href="#">
             nourish.
           </a>
-          <button type="button" className="add-btn rounded-pill ms-auto">
+          <button
+            type="button"
+            className="add-btn rounded-pill ms-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#addMealModal"
+          >
             Add Meal +
           </button>
         </div>
