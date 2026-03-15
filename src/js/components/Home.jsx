@@ -1,28 +1,25 @@
-import React from "react";
+import { useState } from "react";
+import AddMealModal from "./AddMealModal";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import Navbar from "./Navbar";
+import Body from "./Body";
+import Footer from "./Footer";
 
-//create your first component
 const Home = () => {
-	return (
-		<div className="text-center">
-            
+  const [meals, setMeals] = useState([]);
 
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+  const addMeal = (newMeal) => {
+    setMeals([...meals, { id: meals.length + 1, ...newMeal }]);
+  };
+
+  return (
+    <div className="text-center">
+      <Navbar />
+      <Body meals={meals} />
+      <Footer />
+      <AddMealModal addMeal={addMeal} />
+    </div>
+  );
 };
 
 export default Home;
