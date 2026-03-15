@@ -9,6 +9,13 @@ const Navbar = () => {
           <a className="navbar-brand" href="#">
             nourish.
           </a>
+
+          <div className="date-nav ms-auto me-3">
+            <button className="date-btn">←</button>
+            <span>Today</span>
+            <button className="date-btn">→</button>
+          </div>
+
           <button
             type="button"
             className="add-btn rounded-pill ms-auto"
