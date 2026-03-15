@@ -1,11 +1,146 @@
-/* 
+body {
+  background: #2f3346;
+  padding-bottom: 60px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.navbar-custom {
+  background-color: #354f52;
+  border-bottom: 0.5px solid #4a6368;
+}
 
-*/
+.navbar-brand {
+  font-family: "DM Serif Display", serif;
+  font-size: 35px;
+  color: #84a98c;
+  letter-spacing: -0.5px;
+}
+
+.add-btn {
+  background: #b08968;
+  color: #cad2c5;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 26px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+  transition: opacity 0.2s;
+}
+
+.add-btn:hover {
+  opacity: 0.85;
+}
+
+.summary-col {
+  background-color: #354f52;
+}
+
+.border-start {
+  border-left: 1px solid #4a6368 !important;
+}
+
+.meal-card {
+  border: 1px solid #4a6368;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.meal-card h3 {
+  color: #84a98c;
+  font-size: 11px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.meal-card p {
+  color: #cad2c5;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.meal-card span {
+  color: #b08968;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.meal-log-col {
+  padding: 24px 32px;
+  background-color: #2f3e46;
+}
+
+.footer-custom {
+  background-color: #354f52;
+  border-top: 1px solid #84a98c;
+  padding: 8px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+.footer-tab {
+  padding: 12px 60px;
+  background: none;
+  border: none;
+  border-top: 2px solid transparent;
+  color: #537a6e;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+
+.footer-tab.active {
+  color: #84a98c;
+  border-top-color: #84a98c;
+}
+
+.footer-tab:hover:not(.active) {
+  color: #84a98c;
+}
+
+.date-nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.date-nav span {
+  font-size: 14px;
+  color: #cad2c5;
+  font-weight: 300;
+  min-width: 80px;
+  text-align: center;
+}
+
+.date-btn {
+  background: none;
+  border: 1.5px solid #4a6368;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  color: #84a98c;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.date-btn:hover {
+  border-color: #84a98c;
+}
+
